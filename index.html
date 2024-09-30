@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="hamburger">
+        <img src="icon-hamburger.svg" alt="" />
+      </div>
+      <div class="search">
+        <input type="text" id="search" placeholder="Search products" />
+        <svg
+          width="64px"
+          height="64px"
+          viewBox="0 0 24.00 24.00"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="img"
+          style="width: 25"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M15 15L21 21"
+              stroke="#323232"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+              stroke="#323232"
+              stroke-width="2"
+            ></path>
+          </g>
+        </svg>
+      </div>
+
+      <img src="" alt="" />
+
+      <div class="notification">
+        <!-- <div class="add">
+          <svg
+            fill="#ffffff"
+            width="64px"
+            height="64px"
+            viewBox="0 0 32 32"
+            id="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: 25"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                  }
+                </style>
+              </defs>
+              <path
+                d="M28.7071,19.293,26,16.5859V13a10.0136,10.0136,0,0,0-9-9.9492V1H15V3.0508A10.0136,10.0136,0,0,0,6,13v3.5859L3.2929,19.293A1,1,0,0,0,3,20v3a1,1,0,0,0,1,1h7v.7768a5.152,5.152,0,0,0,4.5,5.1987A5.0057,5.0057,0,0,0,21,25V24h7a1,1,0,0,0,1-1V20A1,1,0,0,0,28.7071,19.293ZM19,25a3,3,0,0,1-6,0V24h6Zm8-3H5V20.4141L7.707,17.707A1,1,0,0,0,8,17V13a8,8,0,0,1,16,0v4a1,1,0,0,0,.293.707L27,20.4141Z"
+              ></path>
+              <rect
+                id="_Transparent_Rectangle_"
+                data-name="<Transparent Rectangle>"
+                class="cls-1"
+                width="32"
+                height="32"
+              ></rect>
+            </g>
+          </svg>
+          <small class="big">0</small>
+        </div> -->
+
+        <div class="add" id="cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#ffffff"
+            fill="Transparent"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+            />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+          <small id="cartCount" class="small">0</small>
+        </div>
+
+        <div class="user">
+          <img src="6c.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <nav class="sidebar">
+      <div class="scrollbox">
+        <div class="scrollbox-inner">
+          <div class="logo-section">
+            <div class="filter">
+              <div class="filter-icon">
+                <svg
+                  width="64px"
+                  height="64px"
+                  viewBox="0 0 24.00 24.00"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="rotate(0)"
+                  stroke="#ffffff"
+                  stroke-width="1.608"
+                  style="width: 25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12ZM9 17C9 16.4477 9.44772 16 10 16H14C14.5523 16 15 16.4477 15 17C15 17.5523 14.5523 18 14 18H10C9.44772 18 9 17.5523 9 17Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
+
+                <h2>Filter</h2>
+              </div>
+
+              <div class="container">
+                <div class="store">
+                  <div class="store-header">
+                    <h3>Store</h3>
+                    <img src="up-arrow-svgrepo-com.svg" alt="" />
+                  </div>
+                  <div id="filter-items">
+                    <div class="store-item">
+                      <input
+                        type="checkbox"
+                        class="check"
+                        name="check"
+                        id="wears"
+                      />
+                      <label for="wears">Wears</label>
+                    </div>
+                    <div class="store-item">
+                      <input
+                        type="checkbox"
+                        class="check"
+                        name="check"
+                        id="furniture"
+                      />
+                      <label for="furniture">Furniture</label>
+                    </div>
+                    <div class="store-item">
+                      <input
+                        type="checkbox"
+                        class="check"
+                        name="check"
+                        id="gargets"
+                      />
+                      <label for="gargets">Gargets</label>
+                    </div>
+                    <div class="store-item">
+                      <input
+                        type="checkbox"
+                        class="check"
+                        name="check"
+                        id="home-appliance"
+                      />
+                      <label for="home-appliance">Home Appliance</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products">
+                  <div class="store-header">
+                    <h3>Products</h3>
+                    <img
+                      style="width: 20px"
+                      src="down-arrow2-svgrepo-com.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="wears" />
+                    <label for="wears">Watch</label>
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="wears" />
+                    <label for="wears">Men Wears</label>
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="wears" />
+                    <label for="wears">Female Wears</label>
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="wears" />
+                    <label for="wears">Shoes</label>
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="gargets" />
+                    <label for="gargets">Smartphones</label>
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="gargets" />
+                    <label for="gargets">Laptop</label>
+                  </div>
+                  <div class="store-item">
+                    <input type="checkbox" name="check" id="gargets" />
+                    <label for="gargets">Tv</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="offer">
+        <h2 class="h2">Special Offers</h2>
+
+        <div class="hero">
+          <div class="hero-first">
+            <p>High Quality Products</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+              Quasi sequi esse illo consectetur harum, facere quod <br />
+              nobis eius quis expedita.
+            </p>
+            <button>Explore More</button>
+          </div>
+          <div class="hero-second">
+            <p>Discount Up to</p>
+            <p>70<span>%</span></p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="best-seller">
+          <h2 id="best-seller">Best Seller</h2>
+          <nav>
+            <ul>
+              <li><a href="#best-seller">All Products</a></li>
+              <li class="none"><a class="wears" href="#">Wears</a></li>
+              <li class="none"><a href="#">Furniture</a></li>
+              <li class="none"><a href="#">Gargets</a></li>
+              <li class="none"><a href="#">Home Appliances</a></li>
+            </ul>
+          </nav>
+          <img class="best-img" src="hamburger-svgrepo-com.svg" alt="" />
+        </div>
+
+        <div
+          id="products-wrapper"
+          class="w-full max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-6 place-content-center p-4 product-container"
+        ></div>
+      </div>
+
+      <footer class="footer">
+        <div class="bottom">
+          <nav>
+            <ul>
+              <li><a href="#">Wears</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Gargets</a></li>
+              <li><a href="#">Home Appliances</a></li>
+            </ul>
+          </nav>
+          <nav class="bottom-nav">
+            <ul>
+              <li><a href="#">Wears</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Gargets</a></li>
+              <li><a href="#">Home Appliances</a></li>
+            </ul>
+          </nav>
+          <nav class="bottom-nav">
+            <ul>
+              <li><a href="#">Wears</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Gargets</a></li>
+              <li><a href="#">Home Appliances</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <p>Copy&copy;2024</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
